@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://ep-winter-sky-a1vtb5ed.ap-southeast-1.aws.neon.tech/MyProjectMVT_DB?user=MyProjectMVT_DB_owner&password=kphbI8RyzT6X&sslmode=require
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    database: postgresql
+    generate-ddl: true
+    show-sql: true
